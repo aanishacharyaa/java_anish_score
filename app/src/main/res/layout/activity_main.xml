@@ -154,6 +154,7 @@
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/rd_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2">
@@ -161,6 +162,7 @@
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/rd_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3">
@@ -168,6 +170,7 @@
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/rd_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4">
@@ -175,6 +178,7 @@
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/rd_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6">
