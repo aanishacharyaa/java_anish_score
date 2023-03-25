@@ -7,6 +7,7 @@
 
 package com.anish.anish_score
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.ToggleButton
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var decreaseBtn: Button
     private lateinit var toggleButton: ToggleButton
     private lateinit var radioGroup: RadioGroup
+    private lateinit var layout: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         decreaseBtn = findViewById(R.id.decreaseBtn)
         toggleButton = findViewById(R.id.tg_1)
         radioGroup = findViewById(R.id.rg)
+        layout = findViewById(R.id.mainlayout)
+
 
         // Set the default value for the radio group
         radioGroup.check(R.id.rd_1)
@@ -49,11 +54,11 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 // Set dark theme
                 layout.setBackgroundColor(Color.BLACK)
-                textView.setTextColor(Color.WHITE)
+               // textView.setTextColor(Color.WHITE)
             } else {
                 // Set light theme
                 layout.setBackgroundColor(Color.WHITE)
-                textView.setTextColor(Color.BLACK)
+                //textView.setTextColor(Color.BLACK)
             }
         }
 
