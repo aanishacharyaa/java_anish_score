@@ -44,6 +44,20 @@ class MainActivity : AppCompatActivity() {
         tvTeam1Score.text = "0"
         tvTeam2Score.text = "0"
 
+        val toggleButton = findViewById<ToggleButton>(R.id.toggle_button)
+        toggleButton.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                // Set dark theme
+                layout.setBackgroundColor(Color.BLACK)
+                textView.setTextColor(Color.WHITE)
+            } else {
+                // Set light theme
+                layout.setBackgroundColor(Color.WHITE)
+                textView.setTextColor(Color.BLACK)
+            }
+        }
+
+
         // Increase button logic
         increaseBtn.setOnClickListener {
             // Get the id of the selected radio button in the radio group
