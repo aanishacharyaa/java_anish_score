@@ -53,11 +53,15 @@ class MainActivity : AppCompatActivity() {
         toggleButton.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 // Set dark theme
-                layout.setBackgroundColor(Color.BLACK)
+                //layout.setBackgroundColor(Color.BLACK)
+                setTheme(R.style.AppTheme_Dark)
+                println("ischecked")
                // textView.setTextColor(Color.WHITE)
             } else {
                 // Set light theme
-                layout.setBackgroundColor(Color.WHITE)
+               // layout.setBackgroundColor(Color.WHITE)
+                setTheme(R.style.AppTheme_Light)
+                println("AppTheme_Light")
                 //textView.setTextColor(Color.BLACK)
             }
         }
